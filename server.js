@@ -52,13 +52,13 @@ app.post('/signup',(req,res)=>{
         const transporter = nodemailer.createTransport({
           service : 'gmail',
           auth : {
-            user : 'mywebsitenoreply0@gmail.com',
-            pass : 'mvgswoqtfzupoynt'
+            user : ''//your email,
+            pass : ''//your app password
           } 
         });
         //defining email options
         const mailOptions = {
-          from: 'mywebsitenoreply0@gmail.com',
+          from: ''//your email,
           to: email,
           subject: 'Thank you for creating an account!',
           html: `<p>Dear ${fname},</p>
