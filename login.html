@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://kit.fontawesome.com/3bb88abd96.js" crossorigin="anonymous"></script>
+        <style>
+            #outer-div {
+                width:100%;
+                height:100vh;
+                background-color: rgb(246, 246, 246);
+                display: flex;
+            }
+            #m1 {
+                width:fit-content;
+                margin:auto;
+                background-color: #ffffff;
+                border-radius: 10px;
+                box-shadow : 2px 4px rgb(197, 194, 194);
+                padding:10px;
+                
+            }
+            .ele {
+                width:fit-content;
+                background-color: #ffffff;
+                display: flex;
+                border-bottom:1px solid #d1d1d1;
+                margin-bottom: 20px;
+            }
+            input {
+                background-color: #ffffff;
+                border:none;
+                margin-left:15px;
+            }
+            input:focus {
+                outline: none;
+            }
+            i {
+                background-color: #ffffff;
+                margin-right: 10px;
+                margin-bottom:5px;
+            }
+            a{
+                color:black;
+                text-decoration: none;
+            }
+            .ele:hover,.ele:focus{
+                border-bottom:1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="outer-div">
+            <div id="m1">
+                <h1 style="margin-left:420px;font-family: Arial, Helvetica, sans-serif;"><b>Login</b></h1>
+                <div class="details" style="display: flex;margin-left: 20px;">
+                    <div class="img" style="border-radius: 5px;">
+                        <img style="width:280px;" src="https://www.doctorfresh.in/uploads/others/signin-image.jpg">
+                    </div>
+                    <div style="padding:60px;padding-top:80px;">
+                        <form action="/login" method="POST">
+                            <div class="ele">
+                                <i class='fas fa-user-alt'></i>
+                                <input type ="text" name="username" placeholder="username" required>
+                            </div>
+                            <div class="ele">
+                                <i class="fa-solid fa-lock"></i>
+                                <input type ="password" name="password" placeholder="password" required>
+                            </div>
+                            <br>
+                            
+                            <button id="b" style='margin-left:60px;padding:12px;background-color: #72ade3;border:none;border-radius:7px;'type="submit"><b>Login</b></button>
+                        </form>
+                    </div>
+                </div>
+                <a style="margin-left:500px;"href="/signup"><b>Create account</b></a>
+            </div>
+        </div>        
+    </body>
+</html>
